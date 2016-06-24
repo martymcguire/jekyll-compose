@@ -71,7 +71,7 @@ module Jekyll
           })
           content += "---\n"
           content + <<-EOC
-I am <span class="p-rsvp" value="yes">going</span> 
+I am <data class="p-rsvp" value="yes">going</data>
 to <a href="#{params.url}" class="u-in-reply-to">an Event</a>.
 EOC
         end
