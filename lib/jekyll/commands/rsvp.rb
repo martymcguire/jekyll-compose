@@ -67,7 +67,9 @@ module Jekyll
         def content
           content = YAML.dump({
             "date" => params.date.strftime('%F %T %z'),
-            "updated" => params.date.strftime('%F %T %z')
+            "updated" => params.date.strftime('%F %T %z'),
+            "h" => "entry",
+            "in-reply-to" => params.url
           })
           content += "---\n"
           content + <<-EOC
